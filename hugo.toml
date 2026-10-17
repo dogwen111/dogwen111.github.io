@@ -11,11 +11,17 @@ locale = 'zh-cn'
   ShowCodeCopyButtons = true
   ShowToc = true
   favicon = "img/avater.jpg"
-  [homeInfoParams]
+
+[params.homeInfoParams]
     Title = "Hi there!"
     Content = "欢迎来到Dogwen的Blog。"
-  [sidebar]
-    avater = "img/avater.jpg"  
+
+[params.sidebar]
+    avatar = "/avater.jpg"
+
+[params.footer]
+  since = 2026
+  customText = "Do you Want to Do"    
 
 [[menu.main]]
   identifier = "home"
@@ -26,7 +32,7 @@ locale = 'zh-cn'
 [[menu.main]]
   identifier = "about"
   name = "About"
-  url = "/about.md"
+  url = "/about/"
   weight = 20
 
 [[menu.main]]
@@ -36,9 +42,9 @@ locale = 'zh-cn'
   weight = 30
 
 [[menu.main]]
-  identifier = "categories"
-  name = "Categories"
-  url = "/categories/"
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
   weight = 40
   
 [[menu.social]]
