@@ -1,5 +1,5 @@
 baseURL = 'https://dogwen111.github.io/'
-title = 'Do You Want to Do'
+title = 'DogBlog'
 theme = 'Stack'
 locale = 'zh-cn'
 
@@ -10,25 +10,49 @@ locale = 'zh-cn'
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
-
-[params.homeInfoParams]
-  Title = "Hi there!"
-  Content = "欢迎来到Dogwen的Blog。"
+  favicon = "img/avater.jpg"
+  [homeInfoParams]
+    Title = "Hi there!"
+    Content = "欢迎来到Dogwen的Blog。"
+  [sidebar]
+    avater = "img/avater.jpg"  
 
 [[menu.main]]
-  identifier = "archives"
-  name = "归档"
-  url = "/archives/"
+  identifier = "home"
+  name = "Home"
+  url = "/"
   weight = 10
 
 [[menu.main]]
-  identifier = "categories"
-  name = "分类"
-  url = "/categories/"
+  identifier = "about"
+  name = "About"
+  url = "/about.md"
   weight = 20
 
 [[menu.main]]
-  identifier = "tags"
-  name = "标签"
-  url = "/tags/"
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives/"
   weight = 30
+
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 40
+  
+[[menu.social]]
+  url = "https://github.com/dogwen111"
+  weight = 11
+  identifier = "github"
+  [[menu.social.params]]
+    icon = "brand-github"
+    newTab = true
+
+[[menu.social]]
+  url = "mailto:lyw182@outlook.com"
+  weight = 12
+  identifier = "mail"
+  [[menu.social.params]]
+    icon = "mail"
+    
